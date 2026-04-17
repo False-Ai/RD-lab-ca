@@ -9,8 +9,8 @@ const { Pool } = require('pg');
 const pool = new Pool({
     user: 'postgres',         // Your PostgreSQL username (usually postgres)
     host: 'localhost',        // Running on local machine
-    database: 'gym_db2',       // Name of the database we created
-    password: 'VABB_TWR1',// ⚠️ Replace with your actual pgAdmin password ⚠️
+    database: 'db_name',       // Name of the database we created
+    password: 'Your_pass',// ⚠️ Replace with your actual pgAdmin password ⚠️
     port: 5432,               // Default PostgreSQL port
 });
 
