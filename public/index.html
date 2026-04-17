@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System CRUD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gym Management System</h1>
+        <nav id="nav-menu">
+            <!-- Dynamically populated -->
+        </nav>
+    </header>
+    
+    <main>
+        <section id="crud-section">
+            <h2 id="table-title">Select a Table</h2>
+            
+            <div id="controls">
+                <button id="add-btn" class="btn primary">Add New Record</button>
+            </div>
+
+            <!-- Form Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-modal" class="close">&times;</span>
+                    <h3 id="form-title">Add Record</h3>
+                    <form id="crud-form">
+                        <div id="form-fields"></div>
+                        <button type="submit" class="btn success">Save Record</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="table-container">
+                <table id="data-table">
+                    <thead id="table-head">
+                        <!-- Dynamic headers -->
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Dynamic rows -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
